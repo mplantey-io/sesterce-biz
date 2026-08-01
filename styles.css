@@ -230,7 +230,31 @@ img { max-width: 100%; display: block; }
   padding-block: var(--space-6) var(--space-5);
   position: relative;
   overflow: hidden;
+  color: var(--white);
+  background:
+    linear-gradient(180deg, rgba(9, 20, 28, 0.58) 0%, rgba(9, 20, 28, 0.86) 100%),
+    url("assets/bg-hero-salle.jpg") center 30% / cover no-repeat;
 }
+
+.hero .eyebrow { color: var(--cyan); }
+.hero .eyebrow::before { background: var(--cyan); }
+
+.hero__lede { color: #d7e2e7; }
+
+.hero .btn--ghost {
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+.hero .btn--ghost:hover { border-color: var(--white); }
+
+.hero .chip {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.28);
+  color: #e8eef0;
+  backdrop-filter: blur(4px);
+}
+
+.hero .flipcard-caption { color: #cdd8de; }
 
 .hero__grid {
   display: grid;
@@ -242,6 +266,7 @@ img { max-width: 100%; display: block; }
 .hero__title {
   font-size: clamp(2.4rem, 4.6vw, 3.8rem);
   margin-block: var(--space-2) var(--space-3);
+  color: var(--white);
 }
 
 .hero__lede {
@@ -454,7 +479,9 @@ section { padding-block: var(--space-6); }
 
 /* Panneau festival (section nouveauté) */
 .festival-panel {
-  background: linear-gradient(160deg, var(--ink) 0%, #23343f 100%);
+  background:
+    linear-gradient(160deg, rgba(22, 33, 43, 0.88) 0%, rgba(35, 52, 63, 0.9) 100%),
+    url("assets/bg-festival-concert.jpg") center 35% / cover no-repeat;
   color: var(--white);
   border-radius: 22px;
   padding: var(--space-5);
@@ -520,14 +547,17 @@ section { padding-block: var(--space-6); }
 
 /* Stats + logos */
 .stats-band {
-  background: var(--paper-alt);
+  background:
+    linear-gradient(160deg, rgba(22, 33, 43, 0.84) 0%, rgba(9, 63, 82, 0.86) 100%),
+    url("assets/bg-theatre-facade.jpg") center 40% / cover no-repeat;
+  color: var(--white);
   border-radius: 22px;
   padding: var(--space-5);
   text-align: center;
 }
 .stats-band__intro {
   font-size: 1.1rem;
-  color: var(--ink-soft);
+  color: #d7e2e7;
   max-width: 46ch;
   margin-inline: auto;
 }
@@ -541,13 +571,13 @@ section { padding-block: var(--space-6); }
 .stat-num {
   font-family: var(--font-mono);
   font-size: clamp(2.2rem, 5vw, 3.2rem);
-  color: var(--cyan-deep);
+  color: var(--cyan);
   font-weight: 600;
   letter-spacing: -0.02em;
 }
 .stat-label {
   font-size: 0.9rem;
-  color: var(--ink-soft);
+  color: #cdd8de;
   margin-top: 0.3rem;
 }
 

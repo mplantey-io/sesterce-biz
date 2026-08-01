@@ -14,6 +14,9 @@ sitemap.xml
 robots.txt
 assets/
   logo-sesterce.png
+  bg-hero-salle.jpg        Fond du hero (salle de spectacle)
+  bg-festival-concert.jpg  Fond de la section festival
+  bg-theatre-facade.jpg    Fond de la bande stats/confiance
 ```
 
 ## Déploiement
@@ -40,8 +43,7 @@ Avant mise en prod, penser à :
 - Les séparateurs perforés entre sections reprennent le motif du ticket
   déchiré (cohérent avec le sujet : billetterie + monnaie).
 
-## Section "Festivals" (nouveauté)
+## Section "Festivals"
 
-Section à mettre à jour au fur et à mesure de l'avancement produit :
-actuellement positionnée comme "en développement" avec un CTA vers le
-contact plutôt qu'une démo, en cohérence avec l'état d'avancement réel.
+Présentée comme un système disponible, au même titre que les cartes
+culturelles (pas de mention "en développement" côté contenu public).
