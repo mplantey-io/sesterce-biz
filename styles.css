@@ -809,6 +809,100 @@ section { padding-block: var(--space-6); }
   .legal-toc ol { columns: 1; }
 }
 
+/* ==========================================================================
+   Formulaires (page de suppression de compte, etc.)
+   ========================================================================== */
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: var(--space-3);
+}
+.form-field label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.form-field .hint {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+.form-field input[type="email"],
+.form-field input[type="text"],
+.form-field select,
+.form-field textarea {
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--paper-line);
+  border-radius: 10px;
+  background: var(--white);
+  color: var(--ink);
+}
+.form-field textarea { resize: vertical; min-height: 90px; }
+.form-field input:focus, .form-field select:focus, .form-field textarea:focus {
+  outline: 3px solid var(--cyan-deep);
+  outline-offset: 1px;
+  border-color: var(--cyan-deep);
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-bottom: var(--space-3);
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+}
+.form-checkbox input {
+  margin-top: 0.2rem;
+  width: 18px; height: 18px;
+  accent-color: var(--cyan-deep);
+  flex: none;
+}
+
+.form-panel {
+  background: var(--white);
+  border: 1px solid var(--paper-line);
+  border-radius: var(--radius);
+  padding: var(--space-4);
+  margin-top: var(--space-3);
+}
+
+.btn[disabled] { opacity: 0.55; cursor: not-allowed; }
+.btn--danger { background: #a3372f; color: var(--white); }
+.btn--danger:hover { background: #822a24; }
+
+.form-alert {
+  display: none;
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  font-size: 0.92rem;
+  margin-top: var(--space-3);
+  border: 1px solid transparent;
+}
+.form-alert.is-visible { display: block; }
+.form-alert--success {
+  background: rgba(63, 174, 90, 0.12);
+  border-color: rgba(63, 174, 90, 0.35);
+  color: #1f6b34;
+}
+.form-alert--error {
+  background: rgba(163, 55, 47, 0.1);
+  border-color: rgba(163, 55, 47, 0.3);
+  color: #7c261f;
+}
+.form-alert a { color: inherit; text-decoration: underline; }
+
+.deletion-scope {
+  background: var(--paper-alt);
+  border-radius: var(--radius);
+  padding: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+.deletion-scope h3 { margin-bottom: 0.6rem; }
+
 /* Menu mobile ouvert (JS ajoute .is-open sur <body>) */
 body.nav-open .nav__links {
   display: flex;
