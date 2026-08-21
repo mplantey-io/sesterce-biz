@@ -710,6 +710,105 @@ section { padding-block: var(--space-6); }
   section { padding-block: var(--space-5); }
 }
 
+/* ==========================================================================
+   Pages légales (politique de confidentialité, mentions légales)
+   ========================================================================== */
+
+.legal-page { padding-block: var(--space-6); }
+
+.legal-content { max-width: 72ch; margin-inline: auto; }
+
+.legal-meta {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  margin-top: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.legal-content h2 {
+  font-size: 1.4rem;
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-2);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--paper-line);
+}
+.legal-content > h2:first-of-type { border-top: none; padding-top: 0; }
+
+.legal-content h3 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-top: var(--space-3);
+  margin-bottom: 0.5rem;
+}
+
+.legal-content p {
+  color: var(--ink-soft);
+  margin-bottom: var(--space-2);
+  font-size: 0.98rem;
+}
+
+.legal-content ul, .legal-content ol {
+  color: var(--ink-soft);
+  margin: 0 0 var(--space-2);
+  padding-left: 1.3rem;
+  font-size: 0.98rem;
+}
+.legal-content li { margin-bottom: 0.4rem; }
+
+.legal-content strong { color: var(--ink); }
+
+.legal-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--space-3);
+  font-size: 0.9rem;
+}
+.legal-table th, .legal-table td {
+  text-align: left;
+  padding: 0.65rem 0.8rem;
+  border-bottom: 1px solid var(--paper-line);
+  vertical-align: top;
+}
+.legal-table th {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-soft);
+}
+
+.legal-content a { color: var(--cyan-deep); text-decoration: underline; text-underline-offset: 2px; }
+
+.legal-toc {
+  background: var(--white);
+  border: 1px solid var(--paper-line);
+  border-radius: var(--radius);
+  padding: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+.legal-toc h2 {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  border: none;
+  padding: 0;
+  margin: 0 0 var(--space-2);
+}
+.legal-toc ol {
+  columns: 2;
+  gap: var(--space-3);
+  font-size: 0.9rem;
+  padding-left: 1.1rem;
+  margin: 0;
+}
+@media (max-width: 640px) {
+  .legal-toc ol { columns: 1; }
+}
+
 /* Menu mobile ouvert (JS ajoute .is-open sur <body>) */
 body.nav-open .nav__links {
   display: flex;
